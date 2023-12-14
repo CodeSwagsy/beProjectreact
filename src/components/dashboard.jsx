@@ -22,7 +22,7 @@ export function Dashboard() {
     const handleFormSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3030/user/update', {
+            const response = await fetch('https://backendproject-bdya.onrender.com/user/update', {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ export function Dashboard() {
     const handleDelete = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3030/user/delete', {
+            const response = await fetch('https://backendproject-bdya.onrender.com/user/delete', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',
@@ -84,7 +84,7 @@ export function Dashboard() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3030/user/all/', {
+            const response = await fetch('https://backendproject-bdya.onrender.com/user/all/', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',

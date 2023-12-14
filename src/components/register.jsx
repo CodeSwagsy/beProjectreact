@@ -48,7 +48,7 @@ export function Register() {
         } else {
             setPasswordError("");
             try {
-                const response = await fetch('http://localhost:3030/user/signup/', {
+                const response = await fetch('https://backendproject-bdya.onrender.com/user/signup/', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

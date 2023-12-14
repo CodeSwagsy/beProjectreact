@@ -23,7 +23,7 @@ export function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:3030/user/login/', {
+            const response = await fetch('https://backendproject-bdya.onrender.com/user/login/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
